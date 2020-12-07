@@ -1,0 +1,120 @@
+.RecentCard {
+    display: flex;
+    background-color: var(--white);
+    border: 2px solid var(--gray);
+    padding: 20px;
+    width: auto;
+    height: 457px;
+    border-radius: 5px;
+    margin: 30px auto 30px auto;
+    box-shadow: 7px 7px 5px grey;
+}
+
+.RecentCardMovie {
+    padding: 25px 0px 0px 0px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    width: 350px;
+    margin-right: 10px;
+}
+
+.RecentCardRecipe {
+    padding: 25px 0px 0px 0px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    width: 350px;
+    margin-left: 10px;
+}
+
+.RecentCardMovie-body {
+    background-color: var(--gray);
+    padding: 0px 25px 0px 25px;
+    width: 300px;
+}
+
+.RecentCardRecipe-body {
+    display:flex;
+    background-color: var(--black);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.RecentCardMovie-image {
+    height: 300px;
+    width: 300px;
+    border: var(--main-border);
+    margin-bottom: 15px;
+    background-color: var(--black);
+    margin-left: auto;
+}
+
+.RecentCardMovie-image img {
+    margin-left: 50px;
+}
+
+.RecentCardRecipe-image {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: var(--black);
+    margin-left: auto;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.RecentCardMovie-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.RecentCardRecipe-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 33px;
+    height: 21px;
+}
+
+
+.RecentCardMovie-link-container, .RecentCardRecipe-link-container {
+    background-color: var(--white);
+    border: 2px solid var(--gray);
+    width: 346px;
+    height: 60px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.RecentCardMovie-link, .RecentCardRecipe-link {
+    margin: auto;
+    margin-top: 7px;
+    width: 200px;
+    padding: 5px;
+    background-color: var(--darkgray);
+    height: 27px;
+    border-radius: 3px;   
+}
+
+.RecentCardRecipe-link {
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+.RecentCardMovie-link:hover, .RecentCardRecipe-link:hover {
+    background-color: var(--hover-gray);
+    transform: scale(1.05, 1);
+}
+
+.RecentCardMovie-imdb-text {
+    margin-left: 15px;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.RecentCardMovie-imdb-img {
+    width: 50px;
+    margin-bottom: -6px;
+}

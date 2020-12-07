@@ -1,0 +1,46 @@
+nav {
+    border: var(--main-border);
+    display: grid;
+    grid-template-rows: 75px;
+    grid-template-columns: 20% 80%;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.logo {
+    grid-column: 1;
+    display: grid;
+    border-right: var(--main-border);
+    background-color: var(--red)
+}
+
+.logo-svg {
+    width: 125px;
+    margin: auto;
+}
+
+.right-menu {
+    grid-column: 2;
+    display: grid;
+    padding-right: 5%;
+    background-color: var(--black) ;
+}
+
+.right-menu-links {
+    align-self: center;
+    justify-self: flex-end;
+    color: var(--gray);
+    font-size: 20px;
+}
+
+.right-menu-links a {
+    color: var(--gray);
+}
+
+.recent-link:hover {
+    color: var(--white);
+}
+

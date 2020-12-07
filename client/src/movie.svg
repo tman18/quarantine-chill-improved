@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="movie" viewBox="0 0 1040 676" enable-background="new 0 0 1040 676">
+  <style type="text/css">.movie0{display:none;fill:#FFFFFF;} .movie1{fill:#FFFFFF;stroke:#000000;stroke-width:5;stroke-miterlimit:10;} .movie2{fill:none;stroke:#000000;stroke-width:40;stroke-miterlimit:10;} .movie3{stroke:#FFFFFF;stroke-width:29;stroke-miterlimit:10;} .movie4{fill:none;stroke:#686767;stroke-width:5;stroke-miterlimit:10;}
+  </style>
+  <path class="movie0" d="M20 20"/>
+  <path class="movie1" d="M461.5 599.5h118v60h-118z"/>
+  <path class="movie2" d="M20 20h1000v579h-1000z"/>
+  <path class="movie3" d="M20.5 20h999.5v579h-999.5z"/>
+  <path class="movie4" d="M47.5 43.5"/>
+  <path class="movie1" d="M296.5 659.5h448v14h-448z"/>
+</svg>

@@ -1,0 +1,56 @@
+:root {
+    --main-border: 1px solid #98A0A6;
+    --white: #ffffff;
+    --gray: #98A0A6;
+    --red:  #e63946;
+    --black: #081621;
+    --darkgray: #606060;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.recent-page {
+  display: flex;
+  justify-content: center;
+  margin: auto
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.page-nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-change-next {
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+.page-change-prev {
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+.page-change-prev:hover, .page-change-next:hover {
+    color: var(--red);
+    /*transform: scale(1.05, 1);*/
+}
+
+.current-page {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px 30px 0px;
+}
+
+.recent-loader {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+
