@@ -73,6 +73,7 @@ function App() {
 	function fetchMovie() {
 		// popular end point has max of 500 pages
 		let numberOfPages = 500;
+		let listOfMovies = [];
 		for (let i = 1; i < numberOfPages; i++) {
 			fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${movieApiKey}&page=${i}`)
 				.then((response) => {
@@ -81,7 +82,9 @@ function App() {
 				.then((data) => {
 					// building array of movies
 					// console.log('Data:', data.results[0]);
-					let listOfMovies = data.results;
+					for (let j = 1; j < 20; j++) {
+						listOfMovies.push(data.results[j]);
+					}
 					if (i === 499) {
 						console.log('Entering loop');
 						setMovies(listOfMovies);
@@ -95,7 +98,7 @@ function App() {
 		let currentYear = decadeAsInteger;
 
 		while (currentYear < decadeAsInteger + 10) {
-			years.push(currentYear + 1);
+			years.push(currentYear);
 			currentYear++;
 		}
 		const yearsAsStrings = years.map((year) => year.toString());
@@ -114,11 +117,16 @@ function App() {
 		for (const el of arrays.genres) {
 			if (el.name === filter.Genre) {
 				genreID = el.id;
+				console.log(genreID);
+				// break;
 			}
 		}
-		let filteredMovies = movies
-			.filter((element) => element.genre_ids.includes(genreID))
-			.filter((element) => allYearsIn(filter.Decade).includes(element.release_date.slice(0, 4)));
+		let filteredMovies = movies.filter((element) => element.genre_ids.includes(genreID)).filter((element) => {
+			if (element.release_date) {
+				return allYearsIn(filter.Decade).includes(element.release_date.slice(0, 4));
+			}
+		});
+		// console.log(filteredMovies);
 		if (filteredMovies.length === 0) {
 			setRandomedMovie({
 				poster_path: '/.jpg',

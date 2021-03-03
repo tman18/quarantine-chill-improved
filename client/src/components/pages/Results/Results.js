@@ -111,7 +111,7 @@ function Results(props) {
 					onClick={props.getPair}
 					style={{ alignSelf: 'flex-end', marginBottom: '80px' }}
 				>
-					Give Me Another{' '}
+					Give Me Another
 				</button>
 			</main>
 		</div>
