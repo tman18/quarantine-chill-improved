@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import * as arrays from './../../../arrays.js';
-import { ReactComponent as Movie } from '../../../movie.svg';
-import { ReactComponent as Recipe } from '../../../recipe.svg';
+import { ReactComponent as Movie } from './movie.svg';
+import { ReactComponent as Recipe } from './recipe.svg';
 
 import { css } from '@emotion/core';
 import FadeLoader from 'react-spinners/FadeLoader';

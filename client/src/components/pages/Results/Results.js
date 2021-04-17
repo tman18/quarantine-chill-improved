@@ -2,7 +2,7 @@ import React from 'react';
 import './Results.css';
 
 import { Link } from 'react-router-dom';
-import imdb from '../../../imdb.png';
+import imdb from '../../../images/imdb.png';
 
 import { css } from '@emotion/core';
 import FadeLoader from 'react-spinners/FadeLoader';

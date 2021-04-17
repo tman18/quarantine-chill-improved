@@ -1,6 +1,6 @@
 import React from 'react';
 import './RecentCard.css';
-import imdb from '../../imdb.png';
+import imdb from '../../images/imdb.png';
 
 function RecentCard(props) {
 	return (
